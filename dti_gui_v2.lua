@@ -546,10 +546,15 @@ local function createButton(face, name, description, uwu)
         game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
     end)
 end
-
+createButton(face, "scary ass face", "AHHH", "16144684694")
+createButton(face, "scary ass face 2", "jumpscare", "668614178")
+createButton(face, "scary ass face 3", "lmao", "18762395037")
+createButton(face, "scary ahh face 4", "heart attack", "18761871297")
+createButton(face, "glue face", "lmao", "18762280823")
+createButton(face, "man face", "for glowxfy", "13468798521") 
 createButton(face, "c00lkidd face", "team c00lkid join today !!1", "10560525674")
 createButton(face, "meme face", "bruh", "6074793689")
-createButton(face, "scary ass face", "AHHH", "16144684694")
+
 createButton(face, "rickroll", "never gonna give you up", "6403436054")
 createButton(face, "camping monster", "yk it", "1243374078")
 createButton(face, "jeff the killer", "jumpscare", "668614178")
@@ -565,7 +570,8 @@ createButton(face, "stare cat", ":3", "7488932274")
 createButton(face, "drake", "protect your little sister", "2156741281")
 createButton(face, "silly cat", "silly", "16583833020")
 createButton(face, "man face", "for glowxfy", "13468798521") 
-createButton(face, "scary ahh face", "heart attack", "18761871297")
+
+
 
 
 
