@@ -660,7 +660,7 @@ wait(0.01)
 loadstring(game:HttpGet("https://pastefy.app/sgdYt8qD/raw",true))() -- wear
 end)
 
-Outfit:NewButton("scary outift", "its described in the name", function()
+Outfit:NewButton("scary creature", "its described in the name", function()
 loadstring(game:HttpGet("https://pastefy.app/lMNQKGxK/raw",true))() -- clear
 
 wait(0.01)
