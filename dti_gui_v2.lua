@@ -547,18 +547,16 @@ local function createButton(face, name, description, uwu)
     end)
 end
 createButton(face, "scary ass face", "AHHH", "16144684694")
-createButton(face, "scary ass face 2", "jumpscare", "668614178")
+createButton(face, "scary ass face 2", "jeff the killer", "668614178")
 createButton(face, "scary ass face 3", "lmao", "18762395037")
 createButton(face, "scary ahh face 4", "heart attack", "18761871297")
+createButton(face, "scary ahh face 5", "camping monster", "1243374078")
 createButton(face, "goofy face", "for glowxfy", "18762082290")
 createButton(face, "glue face", "lmao", "18762697427")
 createButton(face, "man face", "for glowxfy", "13468798521") 
 createButton(face, "c00lkidd face", "team c00lkid join today !!1", "10560525674")
 createButton(face, "meme face", "bruh", "6074793689")
-
 createButton(face, "rickroll", "never gonna give you up", "6403436054")
-createButton(face, "camping monster", "yk it", "1243374078")
-createButton(face, "jeff the killer", "jumpscare", "668614178")
 createButton(face, "honkai star rail person, forgot her name but hot asf", "SMASH SMASH SMASH", "16738948400")
 createButton(face, "john pork is calling", "pick up. now.", "13013958424")
 createButton(face, "bald guy stare", "we dont know the name okay", "15883784987")
@@ -567,10 +565,16 @@ createButton(face, "minor laugh", "hehe", "13396142297")
 createButton(face, "goku drool", "slurp", "15530072543")
 createButton(face, "freakbob call", "freakybob!!", "18137084951")
 createButton(face, "trollface", "trololololololol", "7120897383")
-createButton(face, "stare cat", ":3", "7488932274")
 createButton(face, "drake", "protect your little sister", "2156741281")
+createButton(face, "stare cat", ":3", "7488932274")
 createButton(face, "silly cat", "silly", "16583833020")
-createButton(face, "cleveland brown jr", "why did i add this", "18809014057")
+createButton(face, "chonk cat", "ball", "11104447788")
+createButton(face, "miku", "hiding in your wifi", "17423440483")
+createButton(face, "banana sack boy", "k", "13934236215")
+createButton(face, "skibi tolet", "dop dop dop yes yes", "14488881421")
+createButton(face, "minion", "gru", "10866099644")
+createButton(face, "", "", "")
+
 
 
 
@@ -678,4 +682,3 @@ wait(0.01)
 
 loadstring(game:HttpGet("https://pastefy.app/gYYL5gDx/raw",true))() -- wear
 end)
-
