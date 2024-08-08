@@ -1,6 +1,4 @@
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/n0raxd/setclip-discord-inviter/main/xd.lua"))()
-
-Module.Prompt({ invite = "https://discord.gg/JTgQnvTvP4", name = "silly scripts" }) -- name is optional
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discord-popup",true))() -- discord invite
 
 -- formatting: 3 line breaks between buttons, 5 between tabs
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/shidemuri/scripts/main/ui_lib.lua"))() -- defining the gui library
