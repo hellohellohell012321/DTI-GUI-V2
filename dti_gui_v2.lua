@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discord-popup",true))() -- discord invite
 
 -- formatting: 3 line breaks between buttons, 5 between tabs
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/shidemuri/scripts/main/ui_lib.lua"))() -- defining the gui library
@@ -7,6 +6,13 @@ local Pendulum = Library:New("dress to impress fucker")
 
 
 
+
+local discord = Pendulum:NewTab("discord server")
+
+discord:NewButton("copy to clipboard", "copies discord invite", function()
+local invite = "https://discord.gg/DfzuCe2XQe"
+        setclipboard(invite)
+end)
 
 
 local Exploit1 = Pendulum:NewTab("exploits")
