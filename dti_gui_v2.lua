@@ -9,3 +9,4 @@ message.Text = "gl bro, i leaked the script to the dti devs"
 message.Parent = game.Workspace
 
 end
+ 
