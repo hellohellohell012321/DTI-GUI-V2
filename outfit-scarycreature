@@ -1,0 +1,4 @@
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Starter")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Change Skintone", Color3.new(0.000000, 0.000000, 0.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Classic Makeup", "http://www.roblox.com/asset/?id=1243374078")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Nails", "1", Color3.new(0.474510, 0.058824, 0.058824))
