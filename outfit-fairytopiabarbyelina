@@ -1,0 +1,62 @@
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Starter")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Fancy Sarong")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Fancy Sarong", "1", Color3.new(1.000000, 0.541176, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Summer: Flower Heels")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Summer: Flower Heels", "1", Color3.new(1, 1, 1))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Summer: Flower Heels", "2", Color3.new(1.000000, 0.545098, 0.560784))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Summer: Flower Heels", "3", Color3.new(0.329412, 1.000000, 0.329412))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Summer: Flower Heels", "4", Color3.new(0.047059, 0.411765, 0.258824))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Glittery Doll Dress")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Glittery Doll Dress", "1", Color3.new(1.000000, 0.764706, 0.905882))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Glittery Doll Dress", "2", Color3.new(1.000000, 0.545098, 0.560784))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Glittery Doll Dress", "3", Color3.new(1.000000, 0.545098, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Glittery Doll Dress", "4", Color3.new(1.000000, 0.329412, 0.341176))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "- Hair 7")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "- Hair 7", "1", Color3.new(0.992157, 0.764706, 0.658824))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("ColoringViaTexture", "- Hair 7", "1", "fdc3a8")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "- Hair: Riko's Wavey Hair")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "- Hair: Riko's Wavey Hair", "1", Color3.new(0.992157, 0.764706, 0.658824))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "T Red Gem Necklace")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "T Red Gem Necklace", "1", Color3.new(1.000000, 0.764706, 0.768627))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "T Red Gem Necklace", "2", Color3.new(0.905882, 0.764706, 1.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "T Red Gem Necklace", "3", Color3.new(0.764706, 1.000000, 1.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Enchanted Wings 2")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings 2", "1", Color3.new(1.000000, 0.541176, 0.556863))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings 2", "2", Color3.new(1.000000, 0.541176, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings 2", "3", Color3.new(1.000000, 1.000000, 0.764706))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Enchanted Wings")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings", "1", Color3.new(1.000000, 0.329412, 0.721569))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings", "2", Color3.new(1.000000, 0.541176, 0.556863))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings", "3", Color3.new(1.000000, 0.764706, 0.901961))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Enchanted Wings", "4", Color3.new(1.000000, 1.000000, 0.764706))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "^^IBellaJacket")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "^^IBellaJacket", "2", Color3.new(1.000000, 0.545098, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Magic Girl Corset")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Magic Girl Corset", "1", Color3.new(1.000000, 0.764706, 0.905882))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Magic Girl Corset", "2", Color3.new(1.000000, 0.545098, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Magic Girl Corset", "3", Color3.new(1.000000, 0.764706, 0.768627))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Magic Girl Corset", "4", Color3.new(1.000000, 0.545098, 0.819608))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Teddy Bear")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Teddy Bear", "1", Color3.new(1.000000, 0.764706, 0.905882))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Teddy Bear", "2", Color3.new(0.729412, 0.329412, 1.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Teddy Bear", "3", Color3.new(0.729412, 0.329412, 1.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Teddy Bear", "4", Color3.new(0.643137, 0.113725, 1.000000))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Change Skintone", Color3.new(0.929412, 0.686275, 0.576471))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Classic Makeup", "rbxassetid://17429234536")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Nails", "1", Color3.new(1.000000, 0.329412, 0.721569))
+
+--extra stuff
+
+local args = {
+    [1] = "Teddy Bear",
+    [2] = 4,
+    [3] = {
+        ["Neon_Eyes"] = "Off",
+        ["Neon_Body"] = "Off",
+        ["Neon_Body_2"] = "Off",
+        ["Neon_Nose"] = "Off"
+    }
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("Dress Up").Toggle:FireServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Unequip", "^^IBellaJacket")
