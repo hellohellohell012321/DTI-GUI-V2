@@ -1,0 +1,48 @@
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Long Socks")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Long Socks", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Baddie Leggings/Shorts")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Baddie Leggings/Shorts", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Long-Sleeve")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Long-Sleeve", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Winter: Face Mask")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: Face Mask", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Winter: Face Mask", "2", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Sleeping Mask")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Sleeping Mask", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Sleeping Mask", "2", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Fur Gloves")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Fur Gloves", "1", "rbxassetid://85014903247168")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Equip", "Halloween: - Hair Windblown")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Change Skintone", Color3.new(0.980392, 0.964706, 0.964706))
+local args = {
+    [1] = "Color Accessory",
+    [2] = "Halloween: - Hair Windblown",
+    [3] = "1",
+    [4] = Color3.new(0.9723721146583557, 0.8726416230201721, 0.8227764368057251)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+
+
+local args = {
+    [1] = "Fur Gloves",
+    [2] = 1,
+    [3] = {
+        ["Fur"] = "Off"
+    },
+    [6] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer(unpack(args))
+
+local args = {
+    [1] = "Halloween: - Hair Windblown",
+    [2] = 4,
+    [3] = {},
+    [6] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Classic Makeup"):FireServer("Custom Makeup", "Eyes", "", "")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Color Accessory"):FireServer("Color Accessory", "Nails", "1", Color3.new(0.980392, 0.678431, 0.501961))
