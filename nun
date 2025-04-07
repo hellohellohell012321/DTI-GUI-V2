@@ -33,5 +33,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Togg
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("ChickenHeels", 3)
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("ChickenHeels", 3)
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Change Skintone", Color3.new(0.000000, 0.000000, 0.000000))
-game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "", "")
+game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "http://www.roblox.com/asset/?id=16144684694", "")
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Nails", "1", Color3.new(0.980392, 0.678431, 0.501961))
