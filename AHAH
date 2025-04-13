@@ -1,0 +1,386 @@
+
+
+-- StarterGui.ScreenGui
+screengui = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+screengui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Frame
+frame = Instance.new("Frame", screengui);
+frame["BorderSizePixel"] = 0;
+frame["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+frame["Size"] = UDim2.new(0, 250, 0, 300);
+frame["Position"] = UDim2.new(0.5, -358, 0.5, -199);
+frame["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+frame["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.closebutton
+closeButton = Instance.new("TextButton", frame);
+closeButton["TextWrapped"] = true;
+closeButton["TextColor3"] = Color3.fromRGB(255, 255, 255);
+closeButton["TextScaled"] = true;
+closeButton["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+closeButton["ZIndex"] = 5;
+closeButton["Size"] = UDim2.new(0, 30, 0, 30);
+closeButton["BackgroundTransparency"] = 1;
+closeButton["Name"] = [[closebutton]];
+closeButton["Text"] = [[X]];
+closeButton["Position"] = UDim2.new(1.072, -35, -0.05667, 5);
+
+
+-- StarterGui.ScreenGui.Frame.title
+title = Instance.new("TextLabel", frame);
+title["TextWrapped"] = true;
+title["BorderSizePixel"] = 0;
+title["TextSize"] = 38;
+title["BackgroundColor3"] = Color3.fromRGB(255, 210, 221);
+title["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+title["TextColor3"] = Color3.fromRGB(255, 255, 255);
+title["Size"] = UDim2.new(1, 0, 0, 50);
+title["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+title["Text"] = [[CUTE DTI FACES!1]];
+title["Name"] = [[title]];
+
+
+-- StarterGui.ScreenGui.Frame.scroll
+scroll = Instance.new("ScrollingFrame", frame);
+scroll["Active"] = true;
+scroll["BorderSizePixel"] = 0;
+scroll["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+scroll["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+scroll["Name"] = [[scroll]];
+scroll["HorizontalScrollBarInset"] = Enum.ScrollBarInset.Always;
+scroll["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+scroll["Size"] = UDim2.new(1, 0, 1, -50);
+scroll["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+scroll["Position"] = UDim2.new(0, 0, 0, 50);
+scroll["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+scroll["BackgroundTransparency"] = 1;
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+decor9 = Instance.new("ImageLabel", frame);
+decor9["ZIndex"] = 0;
+decor9["BorderSizePixel"] = 0;
+decor9["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+decor9["Image"] = [[http://www.roblox.com/asset/?id=18815876004]];
+decor9["Size"] = UDim2.new(0, 249, 0, 300);
+decor9["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+decora = Instance.new("ImageLabel", frame);
+decora["ZIndex"] = 5;
+decora["BorderSizePixel"] = 0;
+decora["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+decora["Image"] = [[http://www.roblox.com/asset/?id=16471045915]];
+decora["Size"] = UDim2.new(0, 75, 0, 73);
+decora["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+decora["BackgroundTransparency"] = 1;
+decora["Position"] = UDim2.new(0, 0, 0.75667, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+decorb = Instance.new("ImageLabel", frame);
+decorb["ZIndex"] = 0;
+decorb["BorderSizePixel"] = 0;
+decorb["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+decorb["Image"] = [[http://www.roblox.com/asset/?id=457465809]];
+decorb["Size"] = UDim2.new(0, 110, 0, 175);
+decorb["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+decorb["BackgroundTransparency"] = 1;
+decorb["Position"] = UDim2.new(0.556, 0, 0.41667, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+decorc = Instance.new("ImageLabel", frame);
+decorc["ZIndex"] = 5;
+decorc["BorderSizePixel"] = 0;
+decorc["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+decorc["Image"] = [[http://www.roblox.com/asset/?id=131264964625942]];
+decorc["Size"] = UDim2.new(0, 107, 0, 114);
+decorc["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+decorc["BackgroundTransparency"] = 1;
+decorc["Position"] = UDim2.new(0.652, 0, 0.08, 0);
+
+-- StarterGui.ScreenGui.Frame.scroll.UIListLayout
+listLayout = Instance.new("UIListLayout", scroll);
+listLayout["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+listLayout["Padding"] = UDim.new(0, 20);
+listLayout["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.ScreenGui.Frame.scroll.UIPadding
+padding = Instance.new("UIPadding", scroll);
+padding["PaddingTop"] = UDim.new(0, 20);
+
+
+-- drag
+
+local UserInputService = game:GetService("UserInputService")
+
+local gui = frame
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+	
+local function update(input)
+	local delta = input.Position - dragStart
+	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+gui.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = gui.Position
+	
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+	
+gui.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+	
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+end
+end)
+
+
+
+local function applyDecalFace(type, decals, layer)
+    local function resolveImageId(id)
+        local success, obj = pcall(function()
+            return game:GetObjects("rbxassetid://" .. tostring(id))[1]
+        end)
+
+        if success and obj and obj:IsA("Decal") then
+            return obj.Texture -- Returns the real image ID
+        else
+            -- Assume it's already the image ID
+            return "rbxassetid://" .. tostring(id)
+        end
+    end
+
+    local finalImage
+    if typeof(decals) == "table" then
+        finalImage = {}
+        for i, id in ipairs(decals) do
+            finalImage[i] = resolveImageId(id)
+        end
+    else
+        finalImage = resolveImageId(decals)
+    end
+
+    print("Image(s) to use:", finalImage)
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer(
+        "Custom Makeup",
+        type,
+        finalImage,
+        tostring(layer)
+    )
+end
+
+
+
+local makeUps = {
+
+    {name = "Contour", layer = ""},
+    {name = "Touches", layer = ""},
+    {name = "Touches", layer = 2},
+    {name = "Touches", layer = 3},
+    {name = "Touches", layer = 4},
+    {name = "Touches", layer = 5},
+    {name = "Touches", layer = 6},
+    {name = "Eyes", layer = ""},
+    {name = "Lips", layer = ""},
+    {name = "Eyes", layer = 2},
+    {name = "Lips", layer = 2},
+    {name = "Eyebrows", layer = ""},
+    {name = "Lips", layer = 3},
+}
+
+
+
+local function clearFace()
+    local ids = {"", "", "", "", "", "", "", "", "", "", "", "", ""}
+    if #ids >= 14 then print("Too many IDs") return end
+
+    for i = 1, #ids do
+    local decal
+    if i == 10 then 
+        decal = {ids[8], ids[10]} elseif
+    i == 11 then
+        decal = {ids[9], ids[11]} elseif
+    i == 13 then
+        decal = {ids[9], ids[11], ids[13]} else
+    decal = ids[i] end
+
+
+    local current = makeUps[i]
+
+    applyDecalFace(current.name, decal, current.layer)
+end
+
+end
+
+
+
+local function newButton(name, func)
+    local button = Instance.new("TextButton")
+    button.Parent = scroll
+    button.BorderSizePixel = 4
+    button.TextColor3 = Color3.fromRGB(113, 113, 113)
+    button.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    button.Size = UDim2.new(0, 195, 0, 35)
+    button.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    button.TextSize = 25
+    button.Name = name
+    button.Text = name
+    
+    button.MouseButton1Click:Connect(function()
+    
+    clearFace()
+    local ids = func
+    if #ids >= 14 then print("Too many IDs") return end
+
+    for i = 1, #ids do
+    local decal
+    if i == 10 then 
+        decal = {ids[8], ids[10]} elseif
+    i == 11 then
+        decal = {ids[9], ids[11]} elseif
+    i == 13 then
+        decal = {ids[9], ids[11], ids[13]} else
+    decal = ids[i] end
+
+
+    local current = makeUps[i]
+
+    applyDecalFace(current.name, decal, current.layer)
+end
+
+end)
+
+end
+
+
+
+local button = Instance.new("TextButton")
+    button.Parent = scroll
+    button.BorderSizePixel = 4
+    button.TextColor3 = Color3.fromRGB(113, 113, 113)
+    button.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    button.Size = UDim2.new(0, 195, 0, 35)
+    button.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    button.TextSize = 25
+    button.Text = "CLEAR FACE"
+    
+    button.MouseButton1Click:Connect(function()
+    
+    clearFace()
+
+end)
+
+
+
+newButton("mommy's curves", {
+    
+    102183547894430,
+    135575081739796,
+    134059772112139,
+    125957724187639,
+    83226618229969,
+    129949277694340,
+    84354130997939
+    
+})
+
+newButton("cutie pie", {
+    
+    116846512823175,
+    119696831121142,
+    96394604972304,
+    100717555258791,
+    88712381183080,
+    136033848353293,
+    70904481626843,
+    94697634992682,
+    97868257580089,
+    118827894717664,
+    85210957147606
+    
+})
+
+newButton("aesthetic text", {
+
+    129745524094311,
+    106359802755204,
+    107500242673140,
+    116702928693793
+    
+})
+
+newButton("magic mushroom!!", {
+
+    125929310541156,
+    70799533039546,
+    103701777817721,
+    135358798624961,
+    131179344427811,
+    86493180935952,
+    77422741913599,
+    115733670839874
+
+})
+
+newButton("mommy + text", {
+    
+    102183547894430,
+    135575081739796,
+    134059772112139,
+    125957724187639,
+    83226618229969,
+    129949277694340,
+    84354130997939,
+    129745524094311,
+    106359802755204,
+    107500242673140,
+    116702928693793
+    
+})
+
+newButton("mushroom + text", {
+    125929310541156,
+    70799533039546,
+    103701777817721,
+    135358798624961,
+    131179344427811,
+    86493180935952,
+    77422741913599,
+    115733670839874,
+    129745524094311,
+    106359802755204,
+    107500242673140,
+    116702928693793
+})
+
+
+
+closeButton.MouseButton1Click:Connect(function()
+    screengui:Destroy()
+end)
