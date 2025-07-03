@@ -20,6 +20,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Halloween: - Hair Windblown", "1", Color3.new(0.153, 0.137, 0.129))
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Halloween: - Hair Windblown", 1)
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ChangeSkintone"):FireServer(Color3.new(0.929412, 0.686275, 0.576471))
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ClassicMakeup"):FireServer(161, "Light")
--- game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "rbxassetid://121453356618204", "")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "rbxassetid://121453356618204", "")
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Nails", "1", Color3.new(1.000000, 0.756863, 0.901961))
