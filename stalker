@@ -26,5 +26,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Remo
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Hoodie New", "1", Color3.new(0.122, 0.122, 0.122))
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("Toggle"):FireServer("Hoodie New", 3)
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Change Skintone", Color3.new(0.192157, 0.247059, 0.313726))
-game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "http://www.roblox.com/asset/?id=76955658716859", "")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "http://www.roblox.com/asset/?id=76955658716859", "")
 game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Color Accessory", "Nails", "1", Color3.new(0.121569, 0.121569, 0.121569))
