@@ -57,6 +57,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Elegant Pearl Necklace", "2", Color3.new(1.000, 1.000, 1.000))
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Elegant Pearl Necklace", 0)
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ChangeSkintone"):FireServer(Color3.new(0.847059, 0.576471, 0.419608))
--- game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "rbxassetid://115409357624098", "")
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ClassicMakeup"):FireServer(161, "Light")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "rbxassetid://115409357624098", "")
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Nails", "1", Color3.new(0.976471, 0.674510, 0.501961))
