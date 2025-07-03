@@ -66,6 +66,5 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Spanish Flamenco", "2", Color3.new(0.675, 0.004, 0.161))
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Spanish Flamenco", 1)
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ChangeSkintone"):FireServer(Color3.new(0.929412, 0.686275, 0.576471))
--- game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer("Custom Makeup", "Eyes", "rbxassetid://72299852807721", "")
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ClassicMakeup"):FireServer(161, "Light")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "rbxassetid://72299852807721", "")
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Nails", "1", Color3.new(0.976471, 0.674510, 0.501961))
