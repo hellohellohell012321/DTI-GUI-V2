@@ -46,7 +46,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("DTI x BRAT: - Hair 2", "1", Color3.new(0.556, 0.431, 0.360))
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("DTI x BRAT: - Hair 2", 0)
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ChangeSkintone"):FireServer(Color3.new(0.929412, 0.686275, 0.576471))
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "rbxassetid://104524668969822")
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Nails", "1", Color3.new(0.976471, 0.674510, 0.501961))
 
 local args = {
