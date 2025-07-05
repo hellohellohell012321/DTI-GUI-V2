@@ -1,0 +1,64 @@
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Culture - Thai Sbai")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Sbai", "1", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Sbai", "2", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Sbai", "3", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Sbai", "4", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Sbai", "5", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Thai Sbai", 1)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Culture - Spanish Flamenco")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Spanish Flamenco", "1", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Spanish Flamenco", "2", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Spanish Flamenco", 1)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Culture - Brazil Top")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "1", Color3.new(0.973, 0.635, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "2", Color3.new(0.973, 0.647, 0.459))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "3", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "4", Color3.new(0.973, 0.635, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "5", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "6", Color3.new(0.973, 0.635, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Top", "7", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Brazil Top", 3)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Culture - Thai Cuffs")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Cuffs", "1", Color3.new(0.796, 0.573, 0.153))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Cuffs", "2", Color3.new(0.439, 0.114, 0.157))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Thai Cuffs", "3", Color3.new(1.000, 1.000, 1.000))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Thai Cuffs", 0)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Culture - Brazil Fan")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Fan", "1", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Fan", "2", Color3.new(0.808, 0.525, 0.373))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Fan", "3", Color3.new(1.000, 0.718, 0.580))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Culture - Brazil Fan", "4", Color3.new(0.973, 0.639, 0.475))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Culture - Brazil Fan", 3)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("- Hair Wavy w Flowers")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("- Hair Wavy w Flowers", "1", Color3.new(0.992, 0.764, 0.658))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("- Hair Wavy w Flowers", "2", Color3.new(0.992, 0.764, 0.658))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("- Hair Wavy w Flowers", "3", Color3.new(1.000, 0.737, 0.741))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("- Hair Wavy w Flowers", "4", Color3.new(1.000, 0.839, 0.843))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("- Hair Wavy w Flowers", "5", Color3.new(1.000, 0.839, 0.843))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("- Hair Wavy w Flowers", 1, {["Small_Flowers"] = "Off"})
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("Halloween: - Hair Cute Pigtails")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Halloween: - Hair Cute Pigtails", "1", Color3.new(0.792, 0.635, 0.517))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("Halloween: - Hair Cute Pigtails", 1)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("DTI x BRAT: - Hair 3")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("DTI x BRAT: - Hair 3", "1", Color3.new(0.741, 0.576, 0.466))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("DTI x BRAT: - Hair 3", 0)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("EquipItem"):FireServer("DTI x BRAT: - Hair 2")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("DTI x BRAT: - Hair 2", "1", Color3.new(0.556, 0.431, 0.360))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("DressUpToggle"):FireServer("DTI x BRAT: - Hair 2", 0)
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ChangeSkintone"):FireServer(Color3.new(0.929412, 0.686275, 0.576471))
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer("Eyes", "")
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ColorAccessory"):FireServer("Nails", "1", Color3.new(0.976471, 0.674510, 0.501961))
+
+local args = {
+	"Culture - Spanish Flamenco",
+	"1",
+	"MattePlastic"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MaterialAccessory"):FireServer(unpack(args))
+
+local args = {
+	"Culture - Spanish Flamenco",
+	"2",
+	"MattePlastic"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MaterialAccessory"):FireServer(unpack(args))
