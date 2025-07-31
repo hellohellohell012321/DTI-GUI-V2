@@ -1,7 +1,7 @@
 
 
 -- StarterGui.ScreenGui
-screengui = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+screengui = Instance.new("ScreenGui", game:GetService("CoreGui"));
 screengui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
@@ -114,6 +114,17 @@ listLayout["SortOrder"] = Enum.SortOrder.LayoutOrder;
 padding = Instance.new("UIPadding", scroll);
 padding["PaddingTop"] = UDim.new(0, 20);
 
+local NotificationLibrary =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/notif_lib.lua"))(
+)
+
+local function playSound(soundId, loudness)
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://" .. soundId
+    sound.Parent = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
+    sound.Volume = loudness or 1
+    sound:Play()
+end
 
 -- drag
 
@@ -165,7 +176,7 @@ local function applyDecalFace(type, decals, layer)
             return game:GetObjects("rbxassetid://" .. tostring(id))[1]
         end)
 
-        if success and obj and obj:IsA("Decal") then
+        if success and obj then
             return obj.Texture -- Returns the real image ID
         else
             -- Assume it's already the image ID
@@ -185,9 +196,8 @@ local function applyDecalFace(type, decals, layer)
 
     print("Image(s) to use:", finalImage)
 
-    game:GetService("ReplicatedStorage"):WaitForChild("Dress Up"):WaitForChild("RemoteEvent"):FireServer(
-        "Custom Makeup",
-        type,
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CustomMakeup"):FireServer(
+        type, 
         finalImage,
         tostring(layer)
     )
@@ -238,6 +248,244 @@ end
 
 
 
+local function applyDecalList(ids)
+    if #ids >= 14 then print("Too many IDs") return end
+
+    for i = 1, #ids do
+    local decal
+    if i == 10 then 
+        decal = {ids[8], ids[10]} elseif
+    i == 11 then
+        decal = {ids[9], ids[11]} elseif
+    i == 13 then
+        decal = {ids[9], ids[11], ids[13]} else
+    decal = ids[i] end
+
+    local current = makeUps[i]
+
+    applyDecalFace(current.name, decal, current.layer)
+
+    end
+
+end
+
+
+
+local function duringrunway()
+    for _, descendant in ipairs(game:GetDescendants()) do
+        if descendant:IsA("Sound") and descendant.SoundId == "rbxassetid://17208533788" and descendant.IsPlaying then
+            return true, descendant
+        end
+    end
+    return false, nil
+end
+
+
+
+function keepCharacterUpright()
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        local rootPart = character:FindFirstChild("HumanoidRootPart")
+        if rootPart then
+            local position = rootPart.Position
+            local forward = rootPart.CFrame.LookVector
+            rootPart.CFrame = CFrame.new(position, position + Vector3.new(forward.X, 0, forward.Z))
+        end
+    end
+end
+
+
+
+local button = Instance.new("TextButton")
+    button.Parent = scroll
+    button.BorderSizePixel = 4
+    button.TextColor3 = Color3.fromRGB(113, 113, 113)
+    button.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    button.Size = UDim2.new(0, 195, 0, 35)
+    button.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    button.TextSize = 25
+    button.Text = "shove face"
+
+    button.MouseButton1Click:Connect(function()
+    niggers = not niggers
+
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local player = Players.LocalPlayer
+    local camera = workspace.Locators.Runway.Camera3
+
+    local offset = Vector3.new(0.8, -1.6, 0)
+
+    local function teleportToCamera()
+        local character = player.Character
+        if character then
+            local targetPart =
+                character:FindFirstChild("HumanoidRootPart") or character:FindFirstChildWhichIsA("BasePart")
+            if targetPart then
+                targetPart.CFrame = CFrame.new(camera.CFrame.Position + offset)
+            end
+
+            local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+            if hrp then
+                hrp.CFrame = CFrame.lookAt(hrp.Position, camera.CFrame.Position)
+            end
+            keepCharacterUpright()
+        end
+    end
+
+    if not duringrunway() then
+        playSound("6493287948", 0.1)
+        NotificationLibrary:SendNotification(
+            "Error",
+            "This can only be used during the runway/fashion show.",
+            5
+        )
+        return
+    end
+
+    player.Character.Head:Destroy()
+
+    playSound("6493287948", 0.1)
+    NotificationLibrary:SendNotification("Success", "Wait 10 seconds for this to work.", 5)
+
+    while niggers do
+        if duringrunway() then
+            teleportToCamera()
+        else
+            niggers = false
+        end
+        task.wait()
+    end
+end)
+
+local button = Instance.new("TextButton")
+    button.Parent = scroll
+    button.BorderSizePixel = 4
+    button.TextColor3 = Color3.fromRGB(113, 113, 113)
+    button.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    button.Size = UDim2.new(0, 195, 0, 35)
+    button.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    button.TextSize = 25
+    button.Text = "shove face (right)"
+
+    button.MouseButton1Click:Connect(function()
+    niggers = not niggers
+
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local player = Players.LocalPlayer
+    local camera = workspace.Locators.Runway.Camera3
+
+    local offset = Vector3.new(0.8, -1.6, 0.45)
+
+    local function teleportToCamera()
+        local character = player.Character
+        if character then
+            local targetPart =
+                character:FindFirstChild("HumanoidRootPart") or character:FindFirstChildWhichIsA("BasePart")
+            if targetPart then
+                targetPart.CFrame = CFrame.new(camera.CFrame.Position + offset)
+            end
+
+            local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+            if hrp then
+                hrp.CFrame = CFrame.lookAt(hrp.Position, camera.CFrame.Position)
+            end
+            keepCharacterUpright()
+        end
+    end
+
+    if not duringrunway() then
+        playSound("6493287948", 0.1)
+        NotificationLibrary:SendNotification(
+            "Error",
+            "This can only be used during the runway/fashion show.",
+            5
+        )
+        return
+    end
+
+    player.Character.Head:Destroy()
+
+    playSound("6493287948", 0.1)
+    NotificationLibrary:SendNotification("Success", "Wait 10 seconds for this to work.", 5)
+
+    while niggers do
+        if duringrunway() then
+            teleportToCamera()
+        else
+            niggers = false
+        end
+        task.wait()
+    end
+end)
+
+
+local button = Instance.new("TextButton")
+    button.Parent = scroll
+    button.BorderSizePixel = 4
+    button.TextColor3 = Color3.fromRGB(113, 113, 113)
+    button.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    button.Size = UDim2.new(0, 195, 0, 35)
+    button.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    button.TextSize = 25
+    button.Text = "shove face (left)"
+
+    button.MouseButton1Click:Connect(function()
+    niggers = not niggers
+
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local player = Players.LocalPlayer
+    local camera = workspace.Locators.Runway.Camera3
+
+    local offset = Vector3.new(0.8, -1.6, -0.45)
+
+    local function teleportToCamera()
+        local character = player.Character
+        if character then
+            local targetPart =
+                character:FindFirstChild("HumanoidRootPart") or character:FindFirstChildWhichIsA("BasePart")
+            if targetPart then
+                targetPart.CFrame = CFrame.new(camera.CFrame.Position + offset)
+            end
+
+            local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+            if hrp then
+                hrp.CFrame = CFrame.lookAt(hrp.Position, camera.CFrame.Position)
+            end
+            keepCharacterUpright()
+        end
+    end
+
+    if not duringrunway() then
+        playSound("6493287948", 0.1)
+        NotificationLibrary:SendNotification(
+            "Error",
+            "This can only be used during the runway/fashion show.",
+            5
+        )
+        return
+    end
+
+    player.Character.Head:Destroy()
+
+    playSound("6493287948", 0.1)
+    NotificationLibrary:SendNotification("Success", "Wait 10 seconds for this to work.", 5)
+
+    while niggers do
+        if duringrunway() then
+            teleportToCamera()
+        else
+            niggers = false
+        end
+        task.wait()
+    end
+end)
+
 local function newButton(name, func)
     local button = Instance.new("TextButton")
     button.Parent = scroll
@@ -254,24 +502,8 @@ local function newButton(name, func)
     button.MouseButton1Click:Connect(function()
     
     clearFace()
-    local ids = func
-    if #ids >= 14 then print("Too many IDs") return end
 
-    for i = 1, #ids do
-    local decal
-    if i == 10 then 
-        decal = {ids[8], ids[10]} elseif
-    i == 11 then
-        decal = {ids[9], ids[11]} elseif
-    i == 13 then
-        decal = {ids[9], ids[11], ids[13]} else
-    decal = ids[i] end
-
-
-    local current = makeUps[i]
-
-    applyDecalFace(current.name, decal, current.layer)
-end
+    applyDecalList(func)
 
 end)
 
@@ -298,7 +530,7 @@ end)
 
 
 
-newButton("mommy's curves", {
+newButton("mommy", {
     
     102183547894430,
     135575081739796,
@@ -326,6 +558,22 @@ newButton("cutie pie", {
     
 })
 
+newButton("ride it", {
+    
+    74890562030036,
+    102343937961778,
+    77397668310924,
+    104809571835090,
+    105708254900281,
+    98741255758925,
+    135298397588141,
+    85166182169672,
+    138802711333249,
+    135764782644906,
+    82126712787537,
+    105938452729963
+})
+
 newButton("aesthetic text", {
 
     129745524094311,
@@ -333,6 +581,16 @@ newButton("aesthetic text", {
     107500242673140,
     116702928693793
     
+})
+
+newButton("cool symbol", {
+
+    122736952403507,
+    99296401621511,
+    104182823148000,
+    101540726874910,
+    116134771181973
+
 })
 
 newButton("magic mushroom!!", {
@@ -380,6 +638,257 @@ newButton("mushroom + text", {
 })
 
 
+local delux = false
+
+local combo = Instance.new("TextButton")
+    combo.Parent = scroll
+    combo.BorderSizePixel = 4
+    combo.TextColor3 = Color3.fromRGB(113, 113, 113)
+    combo.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    combo.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    combo.Size = UDim2.new(0, 195, 0, 35)
+    combo.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    combo.TextSize = 25
+    combo.Text = "mega combo deluxe"
+    
+    combo.MouseButton1Click:Connect(function()
+    
+    delux = not delux
+
+    while delux do
+
+    clearFace()
+
+    -- mommy
+
+    applyDecalList({
+    102183547894430,
+    135575081739796,
+    134059772112139,
+    125957724187639,
+    83226618229969,
+    129949277694340,
+    84354130997939
+    })
+
+    wait(1)
+
+    if not delux then break end
+
+    clearFace()
+
+    -- cutie
+
+    applyDecalList({
+    116846512823175,
+    119696831121142,
+    96394604972304,
+    100717555258791,
+    88712381183080,
+    136033848353293,
+    70904481626843,
+    94697634992682,
+    97868257580089,
+    118827894717664,
+    85210957147606
+    })
+
+    wait(1)
+    
+    if not delux then break end
+
+    clearFace()
+
+    -- ride it
+
+    applyDecalList({
+    74890562030036,
+    102343937961778,
+    77397668310924,
+    104809571835090,
+    105708254900281,
+    98741255758925,
+    135298397588141,
+    85166182169672,
+    138802711333249,
+    135764782644906,
+    82126712787537,
+    105938452729963
+    })
+
+    wait(1)
+
+    if not delux then break end
+
+    clearFace()
+
+    -- txt
+
+    applyDecalList({
+    129745524094311,
+    106359802755204,
+    107500242673140,
+    116702928693793
+    })
+
+    wait(1)
+
+    if not delux then break end
+
+    clearFace()
+
+    -- pp + txt
+
+    applyDecalList({
+    125929310541156,
+    70799533039546,
+    103701777817721,
+    135358798624961,
+    131179344427811,
+    86493180935952,
+    77422741913599,
+    115733670839874,
+    129745524094311,
+    106359802755204,
+    107500242673140,
+    116702928693793
+    })
+
+    wait(1)
+
+    if not delux then break end
+
+    clearFace()
+
+    -- pp
+
+    applyDecalList({
+    125929310541156,    
+    70799533039546,
+    103701777817721,
+    135358798624961,
+    131179344427811,
+    86493180935952,
+    77422741913599,
+    115733670839874
+    })
+
+    wait(1)
+
+    if not delux then break end
+
+    clearFace()
+
+    -- symbol
+
+    applyDecalList({
+        122736952403507,
+        99296401621511,
+        104182823148000,
+        101540726874910,
+        116134771181973
+    })
+
+    wait(1)
+
+end
+end)
+
+local delux2 = false
+
+local combo2 = Instance.new("TextButton")
+    combo2.Parent = scroll
+    combo2.BorderSizePixel = 4
+    combo2.TextColor3 = Color3.fromRGB(113, 113, 113)
+    combo2.BackgroundColor3 = Color3.fromRGB(242, 242, 242)
+    combo2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    combo2.Size = UDim2.new(0, 195, 0, 35)
+    combo2.BorderColor3 = Color3.fromRGB(255, 210, 221)
+    combo2.TextSize = 25
+    combo2.Text = "combo (worst pics)"
+    
+    combo2.MouseButton1Click:Connect(function()
+    
+    delux2 = not delux2
+
+    while delux2 do
+
+    clearFace()
+
+    -- mommy
+
+    applyDecalList({
+    102183547894430,
+    135575081739796,
+    134059772112139,
+    125957724187639,
+    83226618229969,
+    129949277694340,
+    84354130997939
+    })
+
+    wait(1)
+    
+    if not delux2 then break end
+
+    clearFace()
+
+    -- pp
+
+    applyDecalList({
+    125929310541156,    
+    70799533039546,
+    103701777817721,
+    135358798624961,
+    131179344427811,
+    86493180935952,
+    77422741913599,
+    115733670839874
+    })
+
+    wait(1)
+
+    if not delux2 then break end
+
+    clearFace()
+
+    -- ride it
+
+    applyDecalList({
+    74890562030036,
+    71381277489030,
+    90257542195865,
+    106465564388538,
+    114575338577678,
+    98741255758925,
+    135298397588141,
+    106216592435293,
+    138802711333249,
+    135764782644906,
+    82126712787537,
+    105938452729963
+    })
+
+    wait(1)
+
+    if not delux2 then break end
+
+    clearFace()
+
+    -- symbol
+
+    applyDecalList({
+        122736952403507,
+        99296401621511,
+        104182823148000,
+        101540726874910,
+        116134771181973
+    })
+
+    wait(1)
+
+end
+end)
 
 closeButton.MouseButton1Click:Connect(function()
     screengui:Destroy()
